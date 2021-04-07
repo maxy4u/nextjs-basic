@@ -9,6 +9,7 @@ import { Footer } from '../components/Footer'
 const SecondPage = () => {
 
   const { t } = useTranslation('second-page')
+  debugger;
 
   return (
     <>
@@ -27,10 +28,10 @@ const SecondPage = () => {
   )
 }
 
-export const getStaticProps = async ({ locale }) => ({
+export const getStaticProps = async ({ locale }) => { debugger; return ({
   props: {
     ...await serverSideTranslations(locale, ['second-page', 'footer']),
   },
-})
+})};
 
 export default SecondPage

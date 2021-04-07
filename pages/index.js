@@ -11,7 +11,7 @@ const Homepage = () => {
 
   const router = useRouter()
   const { t } = useTranslation('common')
-
+  debugger;
   return (
     <>
       <main>
